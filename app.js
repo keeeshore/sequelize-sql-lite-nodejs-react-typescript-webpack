@@ -2,9 +2,9 @@ const express = require('express');
 const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
-require('./connection')
-const indexRouter = require('./routes/index');
-const tradesRouter = require('./routes/trades');
+require('./backend/connection');
+const indexRouter = require('./backend/routes/index');
+const tradesRouter = require('./backend/routes/trades');
 const port = 3000;
 
 const app = express();
